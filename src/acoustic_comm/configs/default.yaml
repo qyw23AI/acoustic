@@ -1,0 +1,26 @@
+audio:
+  sr: 16000
+  amp: 0.8
+
+chirp:
+  dur: 0.12
+  f0: 1200.0
+  f1: 3200.0
+
+fsk:
+  f0: 1500.0
+  f1: 2500.0
+  bit_dur: 0.05
+
+frame:
+  cmd_bits: 8
+  seq_bits: 8
+  crc_bits: 8
+  msb_first: true
+  use_crc: true   # 未来可切换成 false（用于极速但风险更高）
+
+tx:
+  gap_after_chirp: 0.05     # 对应表里的 SILENCE_HEAD_S（chirp后到payload前）
+  gap_between_repeats: 0.10 # 对应 GAP_S
+  repeats: 3
+  tail_silence: 0.05        # 对应 SILENCE_TAIL_S（每帧后静音）

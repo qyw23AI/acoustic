@@ -1,0 +1,50 @@
+# ---- Python cache / bytecode ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---- Virtual env ----
+.venv/
+venv/
+ENV/
+env/
+
+# ---- Packaging / build ----
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---- Test / coverage ----
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ---- IDEs ----
+.vscode/
+.idea/
+*.iml
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+
+# ---- Logs / temp ----
+*.log
+*.tmp
+tmp/
+
+# ---- Local recordings / generated test outputs ----
+recordings/
+outputs/
+
+# ---- Audio formats usually not needed in source repo ----
+*.mp3
+*.flac
+*.ogg
+*.m4a
+
+# ---- Generated figures / reports only ----
+figures/generated/
+reports/generated/

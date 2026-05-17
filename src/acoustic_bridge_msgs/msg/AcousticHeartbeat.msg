@@ -1,0 +1,12 @@
+std_msgs/Header header
+bool alive
+bool listener_running
+bool audio_ok
+bool clipping
+float32 input_level
+float32 last_score_raw
+string last_mode
+uint32 last_cmd_id
+string state
+string device
+uint32 restart_count

@@ -1,0 +1,15 @@
+std_msgs/Header header
+bool valid
+uint32 event_seq
+string source
+string mode
+uint32 cmd_id
+string cmd_hex
+string cmd_name
+float32 score_raw
+float32 confidence
+float32 input_level
+bool is_stop_command
+bool is_repeat_suppressed
+string listener_version
+string note

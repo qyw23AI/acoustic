@@ -1,0 +1,8 @@
+serial_cmd_sender:
+  ros__parameters:
+    port: "/dev/ttyUSB0"
+    baudrate: 115200
+    enable_cmd_vel: false
+    cmd_vel_topic: "/cmd_vel"
+    global_pose_topic: "/aft_mapped_in_map"
+    release_script: "/home/r1/acoustic/src/acoustic_comm/scripts/release_spear.sh"

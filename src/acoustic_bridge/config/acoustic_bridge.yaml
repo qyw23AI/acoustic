@@ -1,0 +1,23 @@
+acoustic_bridge:
+  ros__parameters:
+    publish_detection_topic: "/acoustic_comm/detection"
+    publish_heartbeat_topic: "/acoustic_comm/heartbeat"
+    publish_ecu_trigger_topic: "/acoustic_comm/trigger_to_ecu"
+    diagnostics_topic: "/diagnostics"
+
+    heartbeat_hz: 2.0
+
+    # -1 表示不显式指定，交给 acoustic_comm 自己处理
+    input_device: -1
+
+    # 这个是 listener_api.py 里的 print_detection
+    print_detection: false
+
+    # 先留一个人工可读标签，真机后面再微调
+    device_label: "default_input"
+
+    listener_version: "listener_api_v1"
+
+    # bridge 级别轻量重复保护
+    enable_repeat_guard: false
+    repeat_guard_window_sec: 1.0

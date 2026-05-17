@@ -1,0 +1,17 @@
+name: acoustic_comm
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - pip
+  - numpy=2.2.6
+  - scipy=1.15.3
+  - matplotlib=3.10.8
+  - portaudio
+  - libsndfile
+  - pyyaml
+  - pytest
+  - pip:
+      - sounddevice==0.5.5
+      - soundfile==0.13.1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         843
